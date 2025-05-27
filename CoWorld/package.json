@@ -1,0 +1,44 @@
+{
+  "name": "coworld",
+  "version": "1.0.0",
+  "description": "Learn programming with interactive tutorials and hands-on coding exercises for all skill levels.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-burnern/CoWorld.git"
+  },
+  "keywords": [
+    "nodejs",
+    "project"
+  ],
+  "author": {
+    "name": "dev-burnern",
+    "email": "jordash1044@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "alice",
+      "email": "alice@example.com"
+    },
+    {
+      "name": "bob",
+      "email": "bob@example.com"
+    },
+    {
+      "name": "charlie",
+      "email": "charlie@example.com"
+    },
+    {
+      "name": "david",
+      "email": "david@example.com"
+    },
+    {
+      "name": "eve",
+      "email": "eve@example.com"
+    }
+  ],
+  "license": "MIT"
+}
