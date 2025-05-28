@@ -41,7 +41,7 @@
     }
   ],
   "license": "MIT",
-  "dependencies": {
+  "dependencies": { 
     "express": "^5.1.0"
   }
 }
