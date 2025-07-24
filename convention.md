@@ -105,6 +105,10 @@ gitmoji : commit message (#이슈번호)
   - feature 브랜치에서 개발 완료 후 develop 브랜치로 PR 요청한다.
   - merge 이후 요청한 브랜치는 삭제한다.
 
+  ### git merge strategy
+  - PR 요청 시에는 반드시 리뷰어를 지정한다.
+  - 리뷰어는 최소 2명 이상 지정한다.
+  - 방식은 Squash and Merge를 사용한다.
 ## template
 > 템플릿의 목적은 자주 작성하는 이슈와 PR 요청의 시간을 줄이기 위함
 
