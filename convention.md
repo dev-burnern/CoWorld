@@ -24,17 +24,30 @@
 ## Structure
 ```
 frontend/
-├── public/
-├── src/
-│   ├── apis/
-│   ├── components/
-│   ├── hooks/
-│   ├── pages/
-│   ├── styles/
-│   └── index.tsx
-├── tests/
-├── node_modules/  (module)
-└── package.json
+├── react/
+│   ├── public/
+│   ├── src/
+│   │   ├── apis/              # API 호출 관련 함수들
+│   │   ├── assets/            # 이미지, 아이콘 등 정적 자원
+│   │   ├── components/        # 재사용 가능한 컴포넌트
+│   │   │   ├── common/        # 공통 컴포넌트
+│   │   │   └── domain/        # 도메인별 컴포넌트
+│   │   ├── constants/         # 상수 정의
+│   │   ├── hooks/             # 커스텀 훅
+│   │   ├── layouts/           # 레이아웃 컴포넌트
+│   │   ├── pages/             # 페이지 컴포넌트
+│   │   ├── services/          # 비즈니스 로직 서비스
+│   │   ├── store/             # 상태 관리 (Redux, Zustand 등)
+│   │   ├── styles/            # 스타일 파일
+│   │   ├── types/             # TypeScript 타입 정의
+│   │   ├── utils/             # 유틸리티 함수
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   │   └── vite-env.d.ts
+│   ├── node_modules/          # 모듈
+│   ├── package.json
+│   ├── vite.config.ts
+│   └── tsconfig.json
 ```
 
 ```
