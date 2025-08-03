@@ -24,30 +24,38 @@
 ## Structure
 ```
 frontend/
-├── react/
-│   ├── public/
-│   ├── src/
-│   │   ├── apis/              # API 호출 관련 함수들
-│   │   ├── assets/            # 이미지, 아이콘 등 정적 자원
-│   │   ├── components/        # 재사용 가능한 컴포넌트
-│   │   │   ├── common/        # 공통 컴포넌트
-│   │   │   └── domain/        # 도메인별 컴포넌트
-│   │   ├── constants/         # 상수 정의
-│   │   ├── hooks/             # 커스텀 훅
-│   │   ├── layouts/           # 레이아웃 컴포넌트
-│   │   ├── pages/             # 페이지 컴포넌트
-│   │   ├── services/          # 비즈니스 로직 서비스
-│   │   ├── store/             # 상태 관리 (Redux, Zustand 등)
-│   │   ├── styles/            # 스타일 파일
-│   │   ├── types/             # TypeScript 타입 정의
-│   │   ├── utils/             # 유틸리티 함수
-│   │   ├── App.tsx
-│   │   ├── main.tsx
-│   │   └── vite-env.d.ts
-│   ├── node_modules/          # 모듈
-│   ├── package.json
-│   ├── vite.config.ts
-│   └── tsconfig.json
+├── public/                  # 정적 파일(이미지, 아이콘, 폰트 등)을 보관하는 폴더
+├── src/
+│   ├── app/                 # Next.js app 디렉토리, 라우팅/페이지/레이아웃 관리
+│   │   ├── dashboard/       # 대시보드 관련 페이지 디렉토리
+│   │   ├── login/           # 로그인 관련 페이지 디렉토리
+│   │   ├── favicon.ico      # 파비콘 파일
+│   │   ├── globals.css      # 전체 프로젝트에 적용되는 글로벌 스타일
+│   │   ├── layout.tsx       # 전체 레이아웃 컴포넌트
+│   │   └── page.tsx         # 메인(루트) 페이지 컴포넌트
+│   ├── assets/              # 폰트, 이미지 등 정적 자원 폴더
+│   │   ├── fonts/           # 커스텀 폰트 파일 보관
+│   │   └── images/          # 이미지 파일 보관
+│   ├── components/          # 재사용 가능한 컴포넌트 모음
+│   │   ├── forms/           # 폼 관련 컴포넌트
+│   │   ├── layout/          # 레이아웃 관련 컴포넌트
+│   │   └── ui/              # UI(버튼, 인풋 등) 컴포넌트
+│   ├── styles/              # 추가적인 CSS/스타일 파일
+│   ├── tests/               # 테스트 코드 및 테스트 관련 파일
+│   ├── utils/               # 유틸리티 함수 모음
+│   └── validators/          # 입력값 등 유효성 검사 함수 모음
+├── context/                 # React Context 등 전역 상태 관리
+├── hooks/                   # 커스텀 React Hook 함수 모음
+├── middleware/              # Next.js 미들웨어(요청/응답 가로채기 등)
+├── services/                # API 호출, 비즈니스 로직 등 서비스 함수
+├── .gitignore               # Git에서 제외할 파일/폴더 목록
+├── eslint.config.mjs        # ESLint(코드 스타일 검사) 설정 파일
+├── next-env.d.ts            # Next.js 타입 지원 파일
+├── next.config.ts           # Next.js 프로젝트 설정 파일
+├── package.json             # 프로젝트 의존성 및 스크립트 정의
+├── postcss.config.mjs       # PostCSS(스타일 전처리) 설정 파일
+├── tailwind.config.js       # TailwindCSS 설정 파일
+├── tsconfig.json            # TypeScript 설정 파일
 ```
 
 ```
